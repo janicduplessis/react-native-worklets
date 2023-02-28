@@ -822,12 +822,12 @@ module.exports = function ({ types: t }) {
     },
     visitor: {
       "CallExpression": {
-        exit(path, state) {
+        enter(path, state) {
           processWorklets(t, path, state);
         },
       },
       "FunctionDeclaration|FunctionExpression|ArrowFunctionExpression": {
-        exit(path, state) {
+        enter(path, state) {
           processIfWorkletNode(t, path, state);
           processIfGestureHandlerEventCallbackFunctionNode(t, path, state);
         },
