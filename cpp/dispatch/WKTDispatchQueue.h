@@ -19,7 +19,7 @@ class DispatchQueue {
 public:
   explicit DispatchQueue(std::string name);
 
-  ~DispatchQueue();
+  virtual ~DispatchQueue();
 
   // dispatch and copy
   void dispatch(const fp_t &op);
