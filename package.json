@@ -1,6 +1,6 @@
 {
   "name": "react-native-worklets",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.4",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
